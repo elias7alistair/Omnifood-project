@@ -25,6 +25,17 @@ html{
     
 }
 
+.clearfix {zoom: 1}
+
+.clearfix:after {
+    
+    content:".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    
+}
 /*------------------------------------- */
 /*Reuseable components*/
 /*------------------------------------- */
@@ -38,6 +49,31 @@ margin: 0 auto;
 
 section{
     padding:80px 0;
+    
+}
+
+.icon-small{
+  color: #e67e22;
+  display: inline-block;
+  width: 8%;  
+    vertical-align: middle;
+    text-align: center;
+} 
+
+/*---------------------------------------*/
+/*LINK*/
+/*---------------------------------------*/
+
+a:link ,
+a:visited {
+    text-decoration: none;
+    color: #e67e22;
+}
+
+a:hover , 
+a:active {
+    color: #555;
+    transition: color 0.5s;
     
 }
 
@@ -269,11 +305,172 @@ h2:after{
     width: 100%;
     height: auto;
     transform: scale(1.15);
-    transition: opacit 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
     
 }
 
 .meal-photo img:hover{
     opacity: 1;
     transform: scale(1.03);
+}
+
+/*---------------------------------------*/
+/*How it works */
+/*---------------------------------------*/
+.section-steps{
+    background-color: #fdf1f1;
+    
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 30px;
+}
+
+.app-screen{
+    width: 40%; 
+}
+
+.works-step{
+    margin-bottom: 50px;
+}
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    text-align: center; 
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+.section-cities img{
+    height: 190px;
+    width: auto;
+}
+
+
+
+/*---------------------------------------*/
+/*TESTIMONIALS*/
+/*---------------------------------------*/
+
+.section-testimonials {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.84),rgba(0, 0, 0, 0.75)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff; 
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+cite {
+    font-size 20%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    color: #77f461;
+    
+}
+
+cite img{
+    border-radius: 200px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+
+/*---------------------------------------*/
+/*PLANS*/
+/*---------------------------------------*/
+
+.section-plans{
+    background-color: #fdf1f1;
+    
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 50px;   
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+
+
+
+.plan-box div:last-child{
+    text-align: center;
+    
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+   border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+   
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+    
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
 }
