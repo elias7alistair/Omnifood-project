@@ -87,21 +87,16 @@ header{
     background-size:cover;
     background-position: center;
     height: 100vh;
-    
+      background-attachment: fixed;
 }
 
 h1,h2{
-    
- 
    
     font-size: 240%;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
   
-    
-    
-     
 }
 
 h1{
@@ -135,6 +130,18 @@ h2:after{
     margin-top: 30px;
 }
 
+
+.hero-text-box {
+
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+
 .box{
     padding: 1%;
 }
@@ -146,16 +153,6 @@ h2:after{
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-}
-
-.hero-text-box {
-
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
- 
 }
 
 /*-------------icon big---------------*/
@@ -322,7 +319,7 @@ input[type=submit],
 /*How it works */
 /*---------------------------------------*/
 .section-steps{
-    background-color: #e6d5d5;
+    background-color: #f2e3e3;
     
 }
 
@@ -368,8 +365,10 @@ input[type=submit],
     margin-bottom: 80px;
 }
 .section-cities img{
-    height: 190px;
+    display: inline-block;
+    height: 178px;
     width: auto;
+    padding: 0 2px;
 }
 
 
@@ -423,12 +422,12 @@ cite img{
 /*---------------------------------------*/
 
 .section-plans{
-    background-color: #fdf1f1;
+     background-color: #fff;
     
 }
 
 .plan-box {
-    background-color: #fff;
+  
     border-radius: 5px;
     width: 90%;
     margin-left: 50px;   
@@ -440,6 +439,7 @@ cite img{
     border-bottom: 1px solid #e8e8e8;
     
 }
+
 
 
 
@@ -484,7 +484,7 @@ cite img{
 /*---------------------------------------*/
 
 .section-form{
- width: 60%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -505,7 +505,73 @@ textarea{
 input[type=checkbox]{
     margin: 10px 5px 10px 0;
 }
+
 *:focus{
     outline: none;
     
+}
+
+/*---------------------------------------*/
+/*Footer*/
+/*---------------------------------------*/
+
+footer{
+    background-color: #121010;
+   padding: 20px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color:#888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 35px;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 130%;
+}
+
+.social-links li a:hover,
+.social-links li a:active{
+    color: #ddd;
+       transition: color 0.2s;
 }
